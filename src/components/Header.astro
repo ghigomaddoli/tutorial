@@ -1,0 +1,18 @@
+---
+import Navigation from "./Navigation.astro";
+import Hamburger from "./Hamburger.astro";
+---
+<style>
+  head {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+</style>
+<header><Hamburger />
+  <nav class="nav-links">
+    <Navigation linkTo="/" desc="Home" />
+    <Navigation linkTo="/about" desc="About" />
+    <Navigation linkTo="/blog" desc="Blog" />
+  </nav>
+</header>

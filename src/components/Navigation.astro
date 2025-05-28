@@ -1,5 +1,4 @@
 ---
+const { linkTo, desc } = Astro.props;
 ---
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<a href={`${linkTo}`}>{desc}</a>
